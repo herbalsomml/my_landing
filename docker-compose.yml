@@ -20,6 +20,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - static:/static  # Nginx использует директорию '/static' для статики
+      - static:/static
       - certs:/etc/letsencrypt
       - nginx_conf:/etc/nginx/templates
