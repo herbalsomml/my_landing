@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Herbal Sommelier 🌿 | Onlyfans Model</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:site_name" content="Herbal Sommelier 🌿 | Onlyfans Model">
+<meta property="og:title" content="Herbal Sommelier 🌿 | Onlyfans Model">
+<meta name="twitter:title" content="Herbal Sommelier 🌿 | Onlyfans Model">
+<meta name="description" content="🕸️ 21 // Living on the edge ⚡️ Inked, ripped, & unapologetically me 💀 Fitness freak with a taste for adrenaline">
+<meta property="og:description" content="🕸️ 21 // Living on the edge ⚡️ Inked, ripped, & unapologetically me 💀 Fitness freak with a taste for adrenaline">
+<meta name="twitter:description" content="🕸️ 21 // Living on the edge ⚡️ Inked, ripped, & unapologetically me 💀 Fitness freak with a taste for adrenaline">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@herbalsomml">
+<meta property="og:url" content="https://herbalsomml.com">
+<meta name="twitter:url" content="https://herbalsomml.com">
+
+<meta property="og:image" content="{% static 'images/512x512.png' %}">
+<meta name="twitter:image" content="{% static 'images/512x512.png' %}">
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/180x180.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/16x16.png' %}">
+
+<link rel="icon" href="{% static 'images/icon.png' %}">
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10 col-sm-12">
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Herbal Sommelier</h1>
+				<a href="https://onlyfans.com/herbalsommelier/c12" class="wow fadeInDown smoothScroll btn btn-default" data-wow-delay="1s"><img src="{% static 'images/of.webp' %}">Onlyfans</a>
+				<a href="https://fans.ly/subscriptions/giftcode/NzE3MjgwODQ4NDE5NzU4MDgxOjE6MTpjYjRmNGYzM2Zk" class="wow fadeInUp smoothScroll btn btn-default" data-wow-delay="2s"><img src="{% static 'images/fansly.webp' %}">Fansly</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery.backstretch.min.js' %}"></script> 
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script>
+    $(window).load(function(){
+        $('.preloader').fadeOut(1000);
+    });
+    $(document).ready(function() {
+    $(function(){
+        jQuery(document).ready(function() {
+        $('#home').backstretch([
+        "{% static 'images/bg1.webp' %}", 
+        "{% static 'images/bg2.webp' %}", 
+        "{% static 'images/bg3.webp' %}", 
+        "{% static 'images/bg4.webp' %}", 
+        "{% static 'images/bg5.webp' %}", 
+            ],  {duration: 2000, fade: 750});
+        });
+    })
+    new WOW({ mobile: false }).init();
+
+    });
+</script>
+</body>
+</html>
