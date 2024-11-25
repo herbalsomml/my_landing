@@ -17,10 +17,9 @@ services:
       - landing
     build: ./nginx/
     ports:
-      - "80:80"   # HTTP
-      - "443:443" # HTTPS
+      - "80:80"
+      - "443:443"
     volumes:
-      - static:/static
+      - static:/static  # Nginx использует директорию '/static' для статики
       - certs:/etc/letsencrypt
       - nginx_conf:/etc/nginx/templates
-
