@@ -118,12 +118,12 @@
     
     {% if path %}
     <p>You'll see {{ path }}'s page in <span id="countdown" class="timer">5</span> seconds.</p>
-    {% else %}
-    <p>The site will open in <span id="countdown" class="timer">5</span> seconds</p>
-    {% endif %}
     <div class="responsive-block">
         <iframe src="https://cbxyz.com/in/?tour=9oGW&campaign=rvN8K&track=embed&room={{ path }}&disable_sound=1&mobileRedirect=auto&embed_video_only=1" frameborder="0" class="code" scrolling="no"></iframe>
     </div>
+    {% else %}
+    <p>The site will open in <span id="countdown" class="timer">5</span> seconds</p>
+    {% endif %}
     <script type="text/javascript">
         atOptions = {
             'key' : 'f6ad2dd768487bd3dce6c05f431fa591',
