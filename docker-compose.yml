@@ -2,6 +2,7 @@ version: '3'
 
 volumes:
   static:
+  redirector_static:
   certs:
   nginx_conf:
 
@@ -10,11 +11,18 @@ services:
     restart: always
     build: ./landing/
     volumes:
-      - static:/app/staticfiles  # Статика собирается в директорию '/app/staticfiles'
+      - static:/app/staticfiles
+
+  redirector:
+    restart: always
+    build: ./redirector/
+    volumes:
+      - static:/app/staticfiles
 
   gateway:
     depends_on:
       - landing
+      - redirector
     build: ./nginx/
     ports:
       - "80:80"

@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if path %}
+    <title>{{ path }} - Watch Best Live Gay Show</title>
+    <meta property="og:title" content="{{ path }} - Watch Best Live Gay Show">
+    <meta name="twitter:title" content="{{ path }} - Watch Best Live Gay Show">
+    <meta name="description" content="The best online porn cams! Watch {{ path }} jerk off, cum, play with toys and his ass! Absolutely free!">
+    <meta property="og:description" content="The best online porn cams! Watch {{ path }} jerk off, cum, play with toys and his ass! Absolutely free!">
+    <meta name="twitter:description" content="The best online porn cams! Watch {{ path }} jerk off, cum, play with toys and his ass! Absolutely free!">
+    {% else %}
+    <title>Watch Best Live Gay Shows</title>
+    <meta property="og:title" content="Watch Best Live Gay Shows">
+    <meta name="twitter:title" content="Watch Best Live Gay Shows">
+    <meta name="description" content="The best online porn cams! Watch different guys jacking off, cumming, playing with toys and their ass! Absolutely free!">
+    <meta property="og:description" content="The best online porn cams! Watch different guys jacking off, cumming, playing with toys and their ass! Absolutely free!">
+    <meta name="twitter:description" content="The best online porn cams! Watch different guys jacking off, cumming, playing with toys and their ass! Absolutely free!">
+    {% endif %}
+
+   
+    <meta property="og:site_name" content="Best Gay Boys">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="gayhotboys.xyz">
+    <meta property="og:image" content="https://gayhotboys.xyz{% static 'image.webp' %}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@javaddbest">
+    <meta name="twitter:url" content="https://gayhotboys.xyz">
+    <meta name="twitter:image" content="https://gayhotboys.xyz{% static 'image.webp' %}">
+
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const countdownElement = document.getElementById('countdown');
+            let timeLeft = 7;
+
+            const timer = setInterval(function() {
+                countdownElement.textContent = timeLeft;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    const path = "{{ path }}";
+                    const targetUrl = `https://site.com/${path}`;
+                    window.location.href = targetUrl;
+                }
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <h1>Loading...</h1>
+    {% if path %}
+    <p>You'll see {{ path }}'s page in <span id="countdown" class="timer">7</span> seconds.</p>
+    {% else %}
+    <p>The site will open in <span id="countdown" class="timer">7</span> seconds</p>
+    {% endif %}
+</body>
+</html>
